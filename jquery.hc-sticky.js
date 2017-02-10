@@ -115,6 +115,7 @@
 				top: 0,
 				bottom: 0,
 				bottomEnd: 0,
+				limitTop: null,
 				innerTop: 0,
 				innerSticker: null,
 				className: 'sticky',
@@ -379,6 +380,7 @@
 					var top_spacing = (options.innerSticker) ? $(options.innerSticker).position().top : ((options.innerTop) ? options.innerTop : 0),
 						wrapper_inner_top = $wrapper.offset().top,
 						bottom_limit = $container.height() - options.bottomEnd + (stickTo_document ? 0 : wrapper_inner_top),
+						bottom_limit = ( options.limitTop ) ? ( options.limitTop.offset().top - parseInt( options.limitTop.css('margin-top') ) ) : bottom_limit,
 						top_limit = $wrapper.offset().top - options.top + top_spacing,
 						this_height = $this.outerHeight(true) + options.bottom,
 						window_height = $window.height(),
@@ -386,7 +388,6 @@
 						this_document_top = $this.offset().top,
 						this_window_top = this_document_top - offset_top,
 						bottom_distance;
-
 
 					// if sticky has been restarted with on/off wait for it to reach top or bottom
 					if (typeof options.remember != 'undefined' && options.remember) {
