@@ -50,7 +50,7 @@ $('#element').hcSticky({
 		<td>The distance from the bottom of the Window at which to glue HC-Sticky.</td>
 	</tr>
 	<tr>
-		<td><strong>limitTo</strong></td>
+		<td><strong>limitTop</strong></td>
 		<td>null</td>
 		<td>jQuery selector / jQuery object</td>
 		<td>Element at which to limit HC-Sticky to the top of. Use when using stickTo document.</td>
