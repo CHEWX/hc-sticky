@@ -1,8 +1,8 @@
 // jQuery HC-Sticky
 // =============
-// Version: 1.2.43
+// Version: 1.2.44
 // Copyright: Some Web Media
-// Author: Some Web Guy
+// Author: Some Web Guy, Tom Hopcraft
 // Author URL: http://twitter.com/some_web_guy
 // Website: http://someweblog.com/
 // Plugin URL: https://github.com/somewebmedia/hc-sticky
